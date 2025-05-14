@@ -127,7 +127,7 @@ for (let i = 0; i < localStorage.length; i++) {
 
 // Установка и смена темы
 
-const theme = JSON.parse(localStorage.getItem('theme')); 
+const theme = JSON.parse(localStorage.getItem('theme')) || {"theme": "light"}; 
 document.body.classList.add(theme.theme);
 
 const theme_button_1 = document.getElementById('button-theme-1');
