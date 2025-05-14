@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('../materials/fonts/Montserrat.ttf');
+    src: url('materials/fonts/Montserrat.ttf');
 }
 @font-face {
     font-family: 'Nunito';
-    src: url('../materials/fonts/Nunito.ttf');
+    src: url('materials/fonts/Nunito.ttf');
 }
 @font-face {
     font-family: 'Moggly';
-    src: url('../materials/fonts/Moggly.otf');
+    src: url('materials/fonts/Moggly.otf');
 }
 
 html { scroll-behavior: smooth; }
@@ -302,7 +302,7 @@ input[type='checkbox'] {
 input[type='checkbox']:checked {
     background-color: #DBDBDB;
     border-color: #323232;
-    background-image: url("../materials/images/tick-checkbox.svg");
+    background-image: url("materials/images/tick-checkbox.svg");
     background-size: 10px auto;
     background-repeat: no-repeat;
     background-position: center center;
@@ -358,7 +358,7 @@ input[type='checkbox']:checked {
     width: 12px;
     height: 12px;
     pointer-events: none;
-    background: url("../materials/images/arrow-down.svg") no-repeat center center;
+    background: url("materials/images/arrow-down.svg") no-repeat center center;
     background-size: contain;
     z-index: 1000;
 }
@@ -379,12 +379,12 @@ select::-ms-expand { display: none; }
 /* ------------- footer ------------- */
 
 body.light footer { background-color: var(--color-4); }
-body.light footer .content .footer-logo { background-image: url('../materials/images/logo_horizontal.svg'); }
+body.light footer .content .footer-logo { background-image: url('materials/images/logo_horizontal.svg'); }
 body.light footer .content .website-map a { color: #000000; }
 body.light footer .content .copyright { color: var(--color-6); }
 
 body.dark footer { background-color: var(--color-3); }
-body.dark footer .content .footer-logo { background-image: url('../materials/images/logo_horizontal_white.svg'); }
+body.dark footer .content .footer-logo { background-image: url('materials/images/logo_horizontal_white.svg'); }
 body.dark footer .content .website-map a { color: #ffffff; }
 body.dark footer .content .copyright { color: var(--color-5); }
 
@@ -412,7 +412,7 @@ footer span .footer-logo {
     display: inline-block;
     width: 120px;
     height: 32px;
-    background-image: url('../materials/images/logo_horizontal.svg');
+    background-image: url('materials/images/logo_horizontal.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
