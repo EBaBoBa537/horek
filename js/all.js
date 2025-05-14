@@ -107,7 +107,7 @@ async function loadDataFromJSONtoLocalStorage() {
     }
 }
 
-localStorage.clear();
+// localStorage.clear();
 
 if(localStorage.length == 0) { 
     loadDataFromJSONtoLocalStorage(); 
