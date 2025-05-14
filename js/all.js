@@ -40,7 +40,7 @@ function showMessage(text, messageType='info') {
 
 async function loadDataFromJSONtoLocalStorage() {
     try {
-        const backpacksData   = await fetch('../materials/data/backpacks.json');
+        const backpacksData   = await fetch('materials/data/backpacks.json');
         const backpacksJSON   = await backpacksData.json();
         const backpacks = backpacksJSON.backpacks;
 
