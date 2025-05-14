@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horek - Качественные рюкзаки</title>
+    <link rel="shortcut icon" href="materials/images/logo_icon.svg"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+</head>
+<body>
+    <div class="page">
+
+        <header>
+            <div class="content">
+                <div class="header-line first">
+                    <span>
+                        <a href="tel:+375297779033">+375 (29) 777-90-33</a>
+                        <button id="button-theme-1" class="button-theme">Тема</button>
+                    </span> 
+                </div>
+                <div class="header-line second">
+                    <a href="index.html" class="logo"> <img src="materials/images/logo_horizontal.svg"> </a>
+                    <span class="center-part">
+                        <a href="catalog.html">Рюкзаки</a>
+                        <a href="about.html">О бренде</a>
+                        <a href="contacts.html">Контакты</a>    
+                        <button id="burger-menu" class="burger-menu">
+                            <img src="materials/images/burger-menu.svg">
+                            <div id="burger-menu-block" class="burger-menu-block">
+                                <span>
+                                    <a href="catalog.html">Рюкзаки</a>
+                                    <a href="about.html">О бренде</a>
+                                    <a href="contacts.html">Контакты</a>                                
+                                </span>
+                            </div>  
+                        </button>      
+                    </span>
+                    <span class="right-part">
+                        <a href="favourites.html" class="favourites">
+                            <img src="materials/images/favourites.svg">
+                        </a>
+                        <a href="cart.html" class="cart">
+                            <img src="materials/images/cart.svg">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <section>
+            <div class="content">
+                <span class="page-path">
+                    <a href="index.html">Главная</a> <span>/</span>
+                    <a href="cart.html">Корзина</a>
+                </span>
+                <h1>Корзина
+                    <button class="button-clear-cart">Очистить корзину</button>            
+                </h1>
+
+
+                <div class="over-content">
+                    <div class="backpacks-list">
+<!-- 
+                        <div class="cart-product">
+                            <div class="image-block">
+                                <img src="materials/images/backpacks/12043337-1.png">
+                            </div>
+                            <span class="name-container">
+                                <h4>Calvin Clein Urban</h4>
+                                <span>
+                                    <span class="color">Красный</span>
+                                    <button class="button-delete-from-cart">Удалить</button>
+                                </span>
+                            </span>
+                            <span class="cost-container">
+                                <span>
+                                    <button class="button-minus-num">-</button>
+                                    <span class="num">1</span>
+                                    <button class="button-plus-num">+</button>
+                                </span>
+                                <span class="cost">120 р.</span>
+                            </span>
+                        </div> -->
+
+
+                    </div>
+
+                    <div class="order-panel">
+                        <h4>Оформление заказа</h4>
+                        <span class="over-delivery">
+                            <label for="select-delivery">Способ доставки:</label>
+                            <div class="over-select">
+                                <select id="select-delivery" name="delivery">
+                                    <option value="self">Самовывоз из магазина</option>
+                                    <option value="post">Почтовым отправлением</option>
+                                </select>                             
+                            </div>
+                        </span>
+                        <span class="over-payment">
+                            <label for="select-payment">Способ оплаты:</label>
+                            <div class="over-select">
+                                <select id="select-payment" name="payment">
+                                    <option value="self">Наличными при получении</option>
+                                    <option value="post">Картой при получении</option>
+                                </select>                             
+                            </div>
+                        </span>
+                        <span class="products-num"></span>
+                        <span class="all-cost"></span>
+                        <button class="button-order">Заказать</button>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+
+
+        <footer>
+            <div class="content">
+                <span class="over-footer-logo-and-button-theme">
+                    <a href="index.html" class="footer-logo"></a>
+                    <button id="button-theme-2" class="button-theme">Тема</button>
+                </span>
+                <span class="over-website-map-and-block-contacts">
+                    <div class="website-map">
+                        <a href="index.html">Главная</a>
+                        <a href="catalog.html">Рюкзаки</a>
+                        <a href="about.html">О бренде</a>
+                        <a href="catalog.html">Городские рюкзаки</a>
+                        <a href="catalog.html">Туристические рюкзаки</a>
+                        <a href="catalog.html">Спортивные рюкзаки</a>
+                        <a href="contacts.html">Контакты</a>
+                        <a href="favourites.html">Избранное</a>
+                        <a href="cart.html">Корзина</a>
+                    </div>
+                    <div class="block-contacts">
+                        <div class="part">
+                            <h6>Телефон</h6>
+                            <a href="tel:+375297779033">+375 (29) 777-90-33</a>
+                        </div>
+                        <div class="part">
+                            <h6>Email</h6>
+                            <button onclick="copyEmail(event)">info@horek.by</button>
+                        </div>
+                        <div class="part">
+                            <h6>Адрес</h6>
+                            <a href="https://yandex.ru/maps/?um=constructor%3A4359db7b71b0e3a284493524234372bff9841360f708a2547ef8c55bb26258d1&source=constructorLink" target="_blank">г. Минск, ТЦ Титан,<br>пр. Дзержинского, 104Б</a>
+                        </div>
+                        <div class="part">
+                            <h6>Время работы</h6>
+                            <span>Пн-пт 9:00-20:00,<br>Сб-вс выходной</span>
+                        </div>
+                    </div>                    
+                </span>
+                <span class="copyright">© Horek backpacks. Все права защищены</span>
+            </div>
+        </footer>
+
+    </div>
+    
+
+    <!-- message -->
+    <div class="message">
+        <span></span>
+    </div>
+    
+    <script src="js/all.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

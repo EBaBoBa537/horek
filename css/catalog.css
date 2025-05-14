@@ -1,0 +1,338 @@
+/* catalog-content */
+
+
+body.light section .content { background-color: #ffffff; }
+body.dark section .content { background-color: var(--color-9); }
+
+
+section .catalog-content {
+    margin-top: 30px;
+    width: calc(100% - var(--page-padding) - var(--page-padding));
+    padding: 0px var(--page-padding);
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    gap: var(--page-padding);
+}
+section .catalog-content .left-part { 
+    width: 300px; 
+    padding-bottom: 30px;
+}
+
+section .catalog-content .parameters-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+section .catalog-content .parameters-panel .name-label {
+    margin-bottom: 5px;
+}
+
+section .color-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    width: 241px;
+}
+
+section .color-buttons input[type='checkbox'] {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    margin: 0px;
+}
+#checkbox-color-black { background: #000000 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-grey { background: #A5A5A5 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-red { background: #FF4F4F linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-green { background: #44C620 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-orange { background: #FD9B41 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-blue { background: #A0D8EE linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-darkblue { background: #2F5CD9 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-white { background: #ffffff linear-gradient(-45deg, #00000000 0%, #00000000 50%, #00000018 50%, #00000018 100%); }
+#checkbox-color-beige { background: #EBD4C3 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-brown { background: #935935 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-pink { background: #F78DF4 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-purple { background: #8A3AC6 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-yellow { background: #F4D914 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-darkgreen { background: #1a6308 linear-gradient(-45deg, #00000000 0%, #00000000 50%, #ffffff48 50%, #ffffff48 100%); }
+#checkbox-color-double { background: linear-gradient(-45deg, #343c35 0%, #343c35 50%, #ece6de 50%, #ece6de 100%); }
+#checkbox-color-multicolor { background: linear-gradient(-45deg, #c92323 0%, #c92323 26%, #a6a63a 26%, #a6a63a 42%, #2f8b99 42%, #2f8b99 58%, #c26dc8 58%, #c26dc8 74%, #edbb3c 74%, #edbb3c 100%); }
+
+section .color-buttons input[type='checkbox']:checked {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+section .color-buttons input[type='checkbox']:checked::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+
+section .straps-radio label {
+    background-color: #ffffff;
+}
+
+section .height-or-volume {
+    display: inline-flex;
+    gap: 10px;
+}
+section .height-or-volume span { color: #C9C9C9; }
+
+section .height-or-volume .over-radio-buttons label {
+	padding: 0px;
+	border: none;
+	border-radius: 0px;
+    font-size: 16px;
+    color: #C9C9C9;
+}
+section .height-or-volume .over-radio-buttons input[type=radio]:checked + label { color: #000000; border: none; }
+section .height-or-volume .over-radio-buttons label:hover { color: #797979; border: none; }
+
+section .parameters-panel .over-select { margin-top: 5px; }
+section .parameters-panel select { width: 240px; }
+
+/* money-range */
+
+section .over-range {
+    width: 240px;
+    position: relative;
+}
+
+section .range-track {
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+section .range-inputs {
+    position: relative;
+    z-index: 2;
+    margin-top: 8px;
+}
+
+section .range-inputs input[type="range"] {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    height: 4px;
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+section .range-inputs input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-radius: 50%;
+    background: #424242;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+section .range-inputs input[type="range"]::-moz-range-thumb {
+    pointer-events: all;
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-left: -2px;
+    border-radius: 50%;
+    background: #424242;
+    cursor: pointer;
+}
+
+section .features-list, .materials-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 10px 0px 0px;
+}
+
+section #button-reset-filter-params, section #button-apply-filter-params {
+    width: 240px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #DBDBDB;
+    color: #000000;
+}
+section #button-reset-filter-params { background-color: #F3F3F3; }
+
+
+/* backpack */
+
+
+section .catalog-content .right-part { 
+    min-width: calc(100% - 300px); 
+    display: flex;
+    flex-direction: column;
+}
+
+section .filter-line {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+section .filter-line .founded, section .filter-line button, section .filter-line .over-sort label {
+    font-size: 16px;
+    line-height: 27px;
+    height: 27px;
+}
+
+section .filter-line .founded { display: inline-block; }
+
+
+section .filter-line .over-sort {
+    flex-grow: 1;
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+
+@media (max-width: 900px) {
+    section .filter-line {
+        flex-direction: column;
+    }
+    section .filter-line .over-sort {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 3px;
+        order: -1;
+    }
+}
+
+section .over-backpacks-list {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+section .backpacks-list {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+section .backpack {
+    width: 220px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .backpack .image-block {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: #F5F3F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body.light section .backpack .image-block { background-color: #F5F3F1; }
+body.dark section .backpack .image-block { background-color: #ffffff; }
+
+
+section .backpack .image-block img {
+    max-width: 200px;
+    max-height: 200px;
+}
+section .backpack a.name {
+    font-size: 17px;
+    text-align: center;
+}
+section .backpack > span {
+    display: flex;
+    gap: 16px;
+}
+section .backpack span span.price { font-size: 17px; }
+section .backpack span span.is-available.yes { color: #659e29; }
+section .backpack span span.is-available.no { color: #d81e1e; }
+section .backpack .button-add-to-cart {
+    background-color: var(--color-8);
+    width: 100%;
+    height: fit-content;
+    padding: 4px 0px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+body.light section .backpack .button-add-to-cart { background-color: var(--color-8); }
+body.dark section .backpack .button-add-to-cart { background-color: var(--color-4); }
+
+section .backpack .button-add-to-cart:disabled {
+    background-color: #ffffff;
+    border: 2px solid #dadada;
+    color: #4f4f4f;
+    width: calc(100% - 4px);
+    height: 30px;
+    padding: 2px 0px;
+    cursor: default;
+    pointer-events: none;
+}
+
+section .backpack .over-to-favorites { 
+    position: relative; 
+    width: 100%;
+}
+
+section .backpack .button-to-favorite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: 3000;
+}
+
+
+@media (min-width: 850px) and (max-width: 1100px) {
+    section .backpacks-list { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 530px) and (max-width: 850px) {
+    section .backpacks-list { grid-template-columns: repeat(2, 1fr); }
+    section .catalog-content .left-part { display: none; }
+    section .catalog-content .right-part { width: 100%; }
+}
+@media (max-width: 530px) {
+    section .backpacks-list { grid-template-columns: repeat(1, 1fr); }
+    section .catalog-content .left-part { display: none; }
+    section .catalog-content .right-part { width: 100%; }
+}

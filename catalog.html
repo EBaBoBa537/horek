@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horek - Качественные рюкзаки</title>
+    <link rel="shortcut icon" href="materials/images/logo_icon.svg"/>
+    <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/catalog.css">
+</head>
+<body>
+    <div class="page">
+
+        <header>
+            <div class="content">
+                <div class="header-line first">
+                    <span>
+                        <a href="tel:+375297779033">+375 (29) 777-90-33</a>
+                        <button id="button-theme-1" class="button-theme">Тема</button>
+                    </span> 
+                </div>
+                <div class="header-line second">
+                    <a href="index.html" class="logo"> <img src="materials/images/logo_horizontal.svg"> </a>
+                    <span class="center-part">
+                        <a href="catalog.html">Рюкзаки</a>
+                        <a href="about.html">О бренде</a>
+                        <a href="contacts.html">Контакты</a>    
+                        <button id="burger-menu" class="burger-menu">
+                            <img src="materials/images/burger-menu.svg">
+                            <div id="burger-menu-block" class="burger-menu-block">
+                                <span>
+                                    <a href="catalog.html">Рюкзаки</a>
+                                    <a href="about.html">О бренде</a>
+                                    <a href="contacts.html">Контакты</a>                                
+                                </span>
+                            </div>  
+                        </button>      
+                    </span>
+                    <span class="right-part">
+                        <a href="favourites.html" class="favourites">
+                            <img src="materials/images/favourites.svg">
+                        </a>
+                        <a href="cart.html" class="cart">
+                            <img src="materials/images/cart.svg">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </header>
+
+
+        
+        <section>
+            <div class="content">
+                <span class="page-path">
+                    <a href="index.html">Главная</a> <span>/</span>
+                    <a href="catalog.html">Каталог</a>
+                </span>
+                <h1>Рюкзаки</h1>
+
+                <div class="catalog-content">
+                    <div class="left-part">
+
+                        <div class="parameters-panel">
+                            <span class="over-category">
+                                <label for="select-category" class="name-label">Категория</label>
+                                <div class="over-select">
+                                    <select id="select-category" name="category">
+                                        <option value="all">Все рюкзаки</option>
+                                        <option value="городской">Городские рюкзаки</option>
+                                        <option value="туристический">Туристические рюкзаки</option>
+                                        <option value="спортивный">Спортивные рюкзаки</option>
+                                    </select>                             
+                                </div>
+                            </span>
+                            <span class="over-money">
+                                <span class="name-label">Цена</span>
+                                <div>от <span class="money-range-from"></span> р. до <span class="money-range-to"></span> р.</div>
+                                <div class="over-range">
+                                    <div class="range-track"></div>
+                                    <div class="range-inputs">
+                                        <input type="range" id="range-money-min" min="0" max="0" value="0" step="0.01">
+                                        <input type="range" id="range-money-max" min="0" max="0" value="0" step="0.01">
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="over-color">
+                                <span class="name-label">Цвет</span>
+                                <div class="color-buttons">
+                                    <input type="checkbox" id="checkbox-color-black" class="black" name="checkbox-color-black">
+                                    <input type="checkbox" id="checkbox-color-grey" class="grey" name="checkbox-color-grey">
+                                    <input type="checkbox" id="checkbox-color-red" class="red" name="checkbox-color-red">
+                                    <input type="checkbox" id="checkbox-color-green" class="green" name="checkbox-color-green">
+                                    <input type="checkbox" id="checkbox-color-orange" class="orange" name="checkbox-color-orange">
+                                    <input type="checkbox" id="checkbox-color-blue" class="blue" name="checkbox-color-blue">
+                                    <input type="checkbox" id="checkbox-color-darkblue" class="darkblue" name="checkbox-color-darkblue">
+                                    <input type="checkbox" id="checkbox-color-white" class="white" name="checkbox-color-white">
+                                    <input type="checkbox" id="checkbox-color-beige" class="beige" name="checkbox-color-beige">
+                                    <input type="checkbox" id="checkbox-color-brown" class="brown" name="checkbox-color-brown">
+                                    <input type="checkbox" id="checkbox-color-pink" class="pink" name="checkbox-color-pink">
+                                    <input type="checkbox" id="checkbox-color-purple" class="purple" name="checkbox-color-purple">
+                                    <input type="checkbox" id="checkbox-color-yellow" class="yellow" name="checkbox-color-yellow">
+                                    <input type="checkbox" id="checkbox-color-darkgreen" class="darkgreen" name="checkbox-color-darkgreen">
+                                    <input type="checkbox" id="checkbox-color-double" class="double" name="checkbox-color-double">
+                                    <input type="checkbox" id="checkbox-color-multicolor" class="multicolor" name="checkbox-color-multicolor">
+                                </div>
+                            </span>
+                            <span class="over-height-or-volume">
+                                <div class="height-or-volume name-label">
+                                    <div class="over-radio-buttons">
+                                        <input id="radio-height-or-volume-one" type="radio" name="radio-height-or-volume" value="height">
+                                        <label for="radio-height-or-volume-one">Высота</label>
+                                    </div>
+                                    <span>/</span>
+                                    <div class="over-radio-buttons">
+                                        <input id="radio-height-or-volume-two" type="radio" name="radio-height-or-volume" value="volume">
+                                        <label for="radio-height-or-volume-two">Объем</label>
+                                    </div>                        
+                                </div>
+                                <span class="buttons-from-to from-to-height">
+                                    <label for="input-from-height">от</label>
+                                    <input type="text" id="input-from-height" name="from-height" autocomplete="off">
+                                    <label for="input-to-height">до</label>
+                                    <input type="text" id="input-to-height" name="to-height" autocomplete="off">
+                                </span>
+                                <span class="buttons-from-to from-to-volume">
+                                    <label for="input-from-volume">от</label>
+                                    <input type="text" id="input-from-volume" name="from-volume" autocomplete="off">
+                                    <label for="input-to-volume">до</label>
+                                    <input type="text" id="input-to-volume" name="to-volume" autocomplete="off">
+                                </span>
+                            </span>
+                            <span class="over-features">
+                                <span class="name-label">Особенности</span>
+                                <div class="features-list">
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="feature-1" name="feature-1"> <label for="feature-1">вентилируемая спинка</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="feature-2" name="feature-2"> <label for="feature-2">анатомическая спинка</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="feature-3" name="feature-3"> <label for="feature-3">вентилируемые лямки</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="feature-4" name="feature-4"> <label for="feature-4">USB-разъем</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="feature-5" name="feature-5"> <label for="feature-5">мягкая конструкция</label>
+                                    </span>
+                                </div>
+                            </span>
+                            <span class="over-diagonal">
+                                <label for="select-diagonal" class="name-label">Диагональ ноутбука</label>
+                                <div class="over-select">
+                                    <select id="select-diagonal" name="diagonal">
+                                        <option value="none">не выбрано</option>
+                                        <option value="15.6">15.6"</option>
+                                        <option value="13.4">13.4"</option>
+                                        <option value="12.0">12.0"</option>
+                                        <option value="10.0">10.0"</option>
+                                    </select>                             
+                                </div>
+                            </span>
+                            <span class="over-material">
+                                <span class="name-label">Материал</span>
+                                <div class="materials-list">
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="material-1" name="material-1"> <label for="material-1">полиэстер</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="material-2" name="material-2"> <label for="material-2">нейлон</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="material-3" name="material-3"> <label for="material-3">искусственная кожа</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="material-4" name="material-4"> <label for="material-4">натуральная кожа</label>
+                                    </span>
+                                    <span class="over-checkbox">
+                                        <input type="checkbox" id="material-5" name="material-5"> <label for="material-5">текстиль</label>
+                                    </span>
+                                </div>
+                            </span>
+                            <span class="over-straps-num">
+                                <span class="name-label">Количество лямок</span>
+                                <div class="straps-radio">
+                                    <div class="over-radio-buttons">
+                                        <input id="radio-straps-one" type="radio" name="radio-straps" value="1">
+                                        <label for="radio-straps-one">1</label>
+                                    </div>
+                                    <div class="over-radio-buttons">
+                                        <input id="radio-straps-two" type="radio" name="radio-straps" value="2">
+                                        <label for="radio-straps-two">2</label>
+                                    </div>                        
+                                </div>
+                            </span>
+                            <span class="over-section-num">
+                                <span class="name-label">Количество отделений</span>
+                                <span class="buttons-from-to from-to-section">
+                                    <label for="input-from-section">от</label>
+                                    <input type="text" id="input-from-section" name="from-section" autocomplete="off">
+                                    <label for="input-to-section">до</label>
+                                    <input type="text" id="input-to-section" name="to-section" autocomplete="off">
+                                </span>
+                            </span>
+                            <span class="over-pocket-num">
+                                <span class="name-label">Количество карманов</span>
+                                <span class="buttons-from-to from-to-pocket">
+                                    <label for="input-from-pocket">от</label>
+                                    <input type="text" id="input-from-pocket" name="from-pocket" autocomplete="off">
+                                    <label for="input-to-pocket">до</label>
+                                    <input type="text" id="input-to-pocket" name="to-pocket" autocomplete="off">
+                                </span>
+                            </span>
+                            <span class="over-checkbox">
+                                <input type="checkbox" id="is-available" name="is-available"> <label for="is-available">Есть в наличии</label>
+                            </span>
+                            <button id="button-reset-filter-params">Сбросить</button>
+                            <button id="button-apply-filter-params">Применить</button>
+                        </div>
+
+                    </div>
+
+                    <div class="right-part">
+                        <div class="over-backpacks-list">
+                            <span class="filter-line">
+                                <span class="founded"></span>
+                                <span class="over-sort">
+                                    <label for="select-sort">Показывать: </label>
+                                    <div class="over-select">
+                                        <select id="select-sort" name="sort">
+                                            <option value="new">сначала новые</option>
+                                            <option value="low-price">по возрастанию цены</option>
+                                            <option value="high-price">по убыванию цены</option>
+                                            <option value="available">по количеству в наличии</option>
+                                        </select>                             
+                                    </div>
+                                </span>
+
+                            </span>
+                            <div class="backpacks-list">
+
+                                <!-- <div class="backpack">
+                                    <a href="" class="image-block">
+                                        <img src="materials/images/backpacks/11493822-1.png">
+                                    </a>
+                                    <a href="" class="name">Calvin Clein Urban</a>
+                                    <span>
+                                        <span class="price">120 р.</span>
+                                        <span class="is-available yes">В наличии</span>                                            
+                                    </span>
+                                    <button class="button-add-to-cart">В корзину</button>
+                                    <span class="over-to-favorites"> <button class="button-to-favorite"></button> </span>
+                                </div> -->
+
+                            </div>              
+                        </div>
+
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+
+
+        <footer>
+            <div class="content">
+                <span class="over-footer-logo-and-button-theme">
+                    <a href="index.html" class="footer-logo"></a>
+                    <button id="button-theme-2" class="button-theme">Тема</button>
+                </span>
+                <span class="over-website-map-and-block-contacts">
+                    <div class="website-map">
+                        <a href="index.html">Главная</a>
+                        <a href="catalog.html">Рюкзаки</a>
+                        <a href="about.html">О бренде</a>
+                        <a href="catalog.html">Городские рюкзаки</a>
+                        <a href="catalog.html">Туристические рюкзаки</a>
+                        <a href="catalog.html">Спортивные рюкзаки</a>
+                        <a href="contacts.html">Контакты</a>
+                        <a href="favourites.html">Избранное</a>
+                        <a href="cart.html">Корзина</a>
+                    </div>
+                    <div class="block-contacts">
+                        <div class="part">
+                            <h6>Телефон</h6>
+                            <a href="tel:+375297779033">+375 (29) 777-90-33</a>
+                        </div>
+                        <div class="part">
+                            <h6>Email</h6>
+                            <button onclick="copyEmail(event)">info@horek.by</button>
+                        </div>
+                        <div class="part">
+                            <h6>Адрес</h6>
+                            <a href="https://yandex.ru/maps/?um=constructor%3A4359db7b71b0e3a284493524234372bff9841360f708a2547ef8c55bb26258d1&source=constructorLink" target="_blank">г. Минск, ТЦ Титан,<br>пр. Дзержинского, 104Б</a>
+                        </div>
+                        <div class="part">
+                            <h6>Время работы</h6>
+                            <span>Пн-пт 9:00-20:00,<br>Сб-вс выходной</span>
+                        </div>
+                    </div>                    
+                </span>
+                <span class="copyright">© Horek backpacks. Все права защищены</span>
+            </div>
+        </footer>
+
+    </div>
+    
+
+    <!-- message -->
+    <div class="message">
+        <span></span>
+    </div>
+
+    <script src="js/all.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+</html>

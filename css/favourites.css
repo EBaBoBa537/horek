@@ -1,0 +1,121 @@
+section h1 {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+section .button-clear-favourites {
+    width: 140px;
+    position: absolute;
+    top: 9px;
+    right: -180px;
+    color: #A5A5A5;
+}
+
+/* backpacks */
+
+
+
+
+body.light section .content { background-color: #ffffff; }
+body.dark section .content { background-color: var(--color-9); }
+
+
+body.light section .backpack .image-block { background-color: #F5F3F1; }
+body.dark section .backpack .image-block { background-color: #ffffff; }
+
+
+body.light section .backpack .button-add-to-cart { background-color: var(--color-8); }
+body.dark section .backpack .button-add-to-cart { background-color: var(--color-4); }
+
+
+section .over-backpacks-list {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+section .backpacks-list {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    justify-items: center;
+    row-gap: 20px;
+}
+
+section .backpack {
+    width: 220px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .backpack .image-block {
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    background-color: #F5F3F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .backpack .image-block img {
+    max-width: 200px;
+    max-height: 200px;
+}
+section .backpack a.name {
+    font-size: 17px;
+    text-align: center;
+}
+section .backpack > span {
+    display: flex;
+    gap: 16px;
+}
+section .backpack span span.price { font-size: 17px; }
+section .backpack span span.is-available.yes { color: #659e29; }
+section .backpack span span.is-available.no { color: #d81e1e; }
+section .backpack .button-add-to-cart {
+    background-color: var(--color-8);
+    width: 100%;
+    height: fit-content;
+    padding: 4px 0px;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+section .backpack .over-to-favorites { 
+    position: relative; 
+    width: 100%;
+}
+
+section .backpack .button-to-favorite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: 3000;
+}
+
+
+
+@media (min-width: 750px) and (max-width: 1000px) {
+    section .backpacks-list { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 500px) and (max-width: 750px) {
+    section .backpacks-list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 500px) {
+    section .backpacks-list { grid-template-columns: repeat(1, 1fr); }
+}

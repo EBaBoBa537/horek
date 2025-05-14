@@ -1,0 +1,40 @@
+section h1 {
+    margin-bottom: 30px;
+}
+
+section .info {
+    width: calc(100% - var(--page-padding) - var(--page-padding));
+    padding: 0px var(--page-padding);
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+section .part {
+    display: flex;
+    flex-direction: column;
+}
+
+section .part h6 {
+    color: #A5A5A5;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+section .part span {
+    font-size: 16px;
+}
+
+section .yandex-map {
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    background-color: #E6F6D6;
+}
+
+@media (max-width: 580px) {
+    section .info {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}
